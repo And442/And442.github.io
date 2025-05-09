@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>OFFENSE CONTROLS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Баннер -->
+  <div class="banner">
+    <img src="banner.jpg" alt="NHL 25 Banner">
+  </div>
+
+  <!-- Меню -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html">Главная</a>
+      <a href="guides.html">Инструкции</a>
+      <a href="articles.html">Статьи</a>
+      <a href="links.html">Ссылки</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>OFFENSE CONTROLS - Управление в атаке</h1>
+    <p></p>
+
+    <section class="control-guide">
+      <div class="control-left">
+        <img src="guide-offense_controls_media/skating.png" alt="skating">
+        <p>Катание, направление паса, прицеливание при броске</p>
+      </div>
+      <div class="control-right">
+        <video class="control-video guide-video" width="100%" loop>
+          <source src="guide-offense_controls_media/skating.mp4" type="video/mp4">
+          Ваш браузер не поддерживает воспроизведение видео.
+        </video>
+      </div>
+    </section>
+
+    <section class="control-guide">
+      <div class="control-left">
+        <img src="guide-offense_controls_media/shoot.png" alt="shoot">
+        <p>Cиловой бросок (щелчок), кистевой бросок, бросок с хлестким движением</p>
+      </div>
+      <div class="control-right">
+        <video class="control-video guide-video" width="100%" loop>
+          <source src="guide-offense_controls_media/shoot.mp4" type="video/mp4">
+          Ваш браузер не поддерживает воспроизведение видео.
+        </video>
+      </div>
+    </section>
+
+    <section class="control-guide">
+      <div class="control-left">
+        <img src="guide-offense_controls_media/bhtoedragflip.png" alt="bhtoedragflip">
+        <p>Подтягивание шайбы носком клюшки с тыльной стороны и подкидка</p>
+      </div>
+      <div class="control-right">
+        <video class="control-video guide-video" width="100%" loop>
+          <source src="guide-offense_controls_media/bhtoedragflip.mp4" type="video/mp4">
+          Ваш браузер не поддерживает воспроизведение видео.
+        </video>
+      </div>
+    </section>
+
+    <section class="control-guide">
+      <div class="control-left">
+        <img src="guide-offense_controls_media/onehandtuck.png" alt="onehandtuck">
+        <p>Занос одной рукой с удобной и неудобной стороны</p>
+      </div>
+      <div class="control-right">
+        <video class="control-video guide-video" width="100%" loop>
+          <source src="guide-offense_controls_media/onehandtuck.mp4" type="video/mp4">
+          Ваш браузер не поддерживает воспроизведение видео.
+        </video>
+      </div>
+    </section>
+
+  
+
+
+
+
+        <!-- Кнопка "назад" -->
+        <div class="back-button">
+            <a href="guides.html">← Назад к списку инструкций</a>
+          </div>
+          
+      </main>
+    
+      <footer>
+        <p>© 2025 NHL 25 Fan Site</p>
+      </footer>
+
+      <!-- Скрипт для управления воспроизведением видео -->
+      <script>
+        const videos = document.querySelectorAll('.control-video');
+      
+        videos.forEach(video => {
+          video.addEventListener('click', () => {
+            if (video.paused) {
+              video.play();
+            } else {
+              video.pause();
+            }
+          });
+        });
+      </script>
+      
+
+    </body>
+    </html>

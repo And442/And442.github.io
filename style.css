@@ -113,3 +113,67 @@ body {
   .back-button a:hover {
     background-color: #00a4aa;
   }
+
+/* === Стили для блока с гайдами на странице "Управление в атаке" === */
+
+.control-guide {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.control-left {
+  flex: 1;
+  margin-right: 4rem; /* вручную задаёт отступ */
+}
+
+.control-left img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.control-left p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.control-right {
+  max-width: 1000px;
+  flex-shrink: 1;
+}
+
+.control-right video {
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* === class="guide-video" позиционирование и размер видео === */
+
+.guide-video {
+  max-width: 600px;      /* увеличь по желанию */
+  transform: translateX(-20px); /* сдвиг влево на 20 пикселей */
+  margin-top: 1rem;
+  border-radius: 8px;    /* необязательное оформление */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* лёгкая тень */
+}
+
+/* === страница OFFENSE CONTROLS - Управление в атаке === */
+
+.control-guide {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+
+  background-color: #a6daff4d; /* светло-голубая заливка, можно заменить */
+  border: 2px solid #f0f0f0; /* рамка */
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* лёгкая тень */
+}
+
